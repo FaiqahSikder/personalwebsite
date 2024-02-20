@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="header" class="header">
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -17,18 +17,26 @@
                 <h1>Hi, <span class="typed"></span></h1>
                 <p>I like to code, knit, and read.</p>
                 <a href = "mailto: faiqah.t.sikder@gmail.com">Contact me</a>
+                <a href="https://github.com/FaiqahSikder" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/faiqah-sikder-830728223/" target="_blank">LinkedIn</a>
             </div>
         </div>
 
         <div id="about">
             <h2>About Me</h2>
-            <p>Welcome to my personal website! I'm Faiqah, a student at the University of Ottawa. I'm passionate about coding and technology! Here are some of the coding languages and technologies I have experience in:</p>
+            <p>Welcome to my personal website! I'm Faiqah, a student studying at the University of Ottawa. I'm passionate about coding and technology (especially web development)! Here are some of the coding languages and technologies I have experience in:</p>
         
             <ul>
-                <li>Experienced in [Key Skills].</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Java</li>
+                <li>Bootstrap</li>
+                <li>GitGub and Git</li>
             </ul>
         
-            <p>Feel free to explore more about my professional journey and personal interests. If you have any questions or want to connect, don't hesitate to reach out!</p>
+            <p> During my free time, I like to read, play the piano, knit, and playing video games. If you have any questions or want to connect, don't hesitate to reach out!</p>
         </div>
         
 
@@ -39,27 +47,33 @@
             var typed = new Typed(".typed", {
                 strings: ["I'm Faiqah!"],
                 typeSpeed: 150,
-                backSpeed: 150,
-                loop: true
+                //backSpeed: 150,
+                loop: false
             })
         </script>
 
-        <script>document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-        
-                    const targetElement = document.querySelector(this.getAttribute('href'));
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navbar = document.getElementById('navbar');
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Close the navbar (optional, but may be necessary for mobile responsiveness)
+                navbar.classList.remove('open');
             });
         });
-        
-        </script>
+    });
+</script>
+
 
     </body>
 </html>

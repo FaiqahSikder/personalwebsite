@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppings', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 .header{
@@ -78,22 +78,24 @@ nav ul li a:hover{
 
 #about h2 {
     color: #fff;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 #about p {
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.5;
     color: #fff;
 }
 
 #about ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc !important;
+    padding: 18px;
 }
 
 #about li {
     margin-bottom: 10px;
+    color: #fff;
+    font-size: 25px;
 }
 
 #about a {
