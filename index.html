@@ -5,12 +5,12 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div class="header">
+        <div id="header" class="header">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                 </ul>
             </nav>
             <div class="text-box">
@@ -19,6 +19,23 @@
                 <a href = "mailto: faiqah.t.sikder@gmail.com">Contact me</a>
             </div>
         </div>
+
+        <div id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! I'm [Your Name], a passionate [Your Profession/Role] based in [Your Location]. Here's a little about me:</p>
+        
+            <ul>
+                <li>Graduated with a degree in [Your Field of Study].</li>
+                <li>Experienced in [Key Skills].</li>
+                <li>Enthusiastic about [Your Interests/Hobbies].</li>
+            </ul>
+        
+            <p>Feel free to explore more about my professional journey and personal interests. If you have any questions or want to connect, don't hesitate to reach out!</p>
+        </div>
+        
+
+        <div id="portfolio"></div>
+
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed(".typed", {
@@ -28,5 +45,19 @@
                 loop: true
             })
         </script>
+
+        <script>document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+        
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        </script>
+
     </body>
 </html>
