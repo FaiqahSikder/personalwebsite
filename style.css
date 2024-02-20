@@ -14,6 +14,10 @@
     position: relative;
 }
 
+#about, #portfolio{
+    height: 100vh;
+}
+
 nav{
     display: flex;
     width: 100%;
@@ -65,5 +69,40 @@ nav ul li a:hover{
     color: #fff;
     padding: 10px 30px;
     text-decoration: none;
+}
+
+#about {
+    background-color: #b1bca0;
+    padding: 20px;
+}
+
+#about h2 {
+    color: #fff;
+    font-size: 52px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+#about a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about a:hover {
+    text-decoration: underline;
 }
 
