@@ -74,6 +74,9 @@ nav ul li a:hover{
 #about {
     background-color: #b1bca0;
     padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #about h2 {
@@ -108,3 +111,13 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+.about-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#about .about-content{
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+}
