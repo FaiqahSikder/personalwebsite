@@ -16,6 +16,7 @@
 
 #about, #portfolio{
     height: 100vh;
+    padding: 60px 8.5%;
 }
 
 nav{
@@ -25,6 +26,16 @@ nav{
     flex-wrap: wrap;
     padding: 30px 0 10px;
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #b1bca0; /* Matches the background color for consistency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 8.5%; /* Adjusted padding */
+}
+
 
 nav ul{
     flex: 1;
@@ -121,16 +132,15 @@ nav ul li a:hover{
 .project-card {
     background-color: #fff;
     padding: 20px;
-    margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
 }
-
 
 .project-card h3 {
     color: #333;
@@ -165,6 +175,8 @@ html {
     padding: 20px;
 }
 
+
+
 .grid-item {
     background: white;
     padding: 20px;
@@ -172,13 +184,7 @@ html {
     border-radius: 10px;
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
+
 
 
 
